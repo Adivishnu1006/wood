@@ -1,0 +1,118 @@
+body{
+    background-color: #F1EEEA;
+}
+
+
+
+.navi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:sticky;
+    top:0;
+    background-color: #F1EEEA;
+    height: 70px;
+
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 14px;
+    
+}
+
+a{
+    padding: 10px;
+    text-decoration: none;
+    color: #362F2C;
+}
+
+
+
+
+.img{
+    background-image: url(wod.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+
+.wood{
+    text-align: center;
+    color: white;
+    
+}
+
+
+.bttnclr{
+    background-color: #B69B74;
+    border-style: hidden;
+    color: white;
+    font-family: 'muli', 'sans-serif';
+    border-width: 10px;
+    padding: 10px 4rem;
+    }
+
+
+.foo{
+    background-color:#362F2C;
+    height: 100px;
+    color: white;
+   
+
+}
+
+.textfoo{
+    
+    text-align: center;
+    padding-top: 2rem;
+}
+
+
+.abt{
+    text-align: center;
+    text-decoration:solid
+
+}
+
+
+.text{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+    text-align: center;
+}
+
+.txt{
+color: white;
+font-weight: bold;
+font-size: large;  
+}
+
+.animate{
+         
+  
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.25rem;
+    vertical-align: middle;
+    box-shadow: 0 0 0 transparent;
+    border: 1px solid #999;
+    outline: 0 none;
+    transition: box-shadow 0.5s;}
+    
+  .error{
+    
+      animation: shake 0.2s ease-in-out 0s 2;
+      box-shadow: 0 0 0.5em red;}
+    
+@keyframes shake {
+  0% { margin-left: 0rem; }
+  25% { margin-left: 0.5rem; }
+  75% { margin-left: -0.5rem; }
+  100% { margin-left: 0rem; }
+}
+
+
+

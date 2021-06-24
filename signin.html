@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="styling.css">
+    </head>
+<body>
+    <nav class="navi"> 
+        <div>
+        <a href=""><h1 style="color: #362F2C;font-weight: bolder;" >WooD</h1></a>
+    </div>
+      <div class="options">
+          <a href="index.html"><h3>HOME</h3> </a>
+        <a href="index.html#ABOUT">  <h3>ABOUT</h3></a>
+         <a href="index.html#ctu"> <h3>CONTACT US</h3></a>
+
+      </div>
+    </nav>
+
+      <div style="display: flex;justify-content: center;margin-top: 3rem ;background-image: url(wod.jpg);height: 400px;" class="form-control  container-fluid">
+   
+        <div style="margin-top: 5rem;">	
+          <div >
+        <label class="text-light txt">Username</label><br>
+        <input type="text" placeholder=" " id="usernme" class="animate form-control"><br>
+        <label class="txt">Password</label><br>
+        <input type="text" placeholder="" id="pwd" class="animate form-control"><br>
+        <input type="checkbox" >
+            <label class="txt">Remember me</label>       
+        <input type="submit" value="login"  class="btn btn-primary" onclick="vali() " >   
+            </div></div>
+        </div>
+            </div>
+            </div>
+          </div></div></div>
+        <script>
+        function vali(){
+        var username = document.getElementById("usernme").value ;
+        var Password = document.getElementById("pwd").value;
+        
+        
+        if((username=="admin" && Password=="1234")){
+        
+        alert('login successfull');
+        return false;
+        }
+        else if (username==""){
+          document.getElementById("usernme").style.borderColor="red";
+          document.getElementById("usernme").placeholder="field requried";
+          document.getElementById("usernme").className='error animate form-control';
+             
+        }
+        else if (Password==""){
+          document.getElementById("pwd").style.borderColor="red";
+          document.getElementById("pwd").placeholder="field requried";
+          document.getElementById("pwd").className='error animate form-control';
+             
+        }
+        
+        
+        
+        
+        else
+        {
+          alert('login failed')
+        } 
+        
+        }
+        
+        </script>
+        
+
+
+
+
+
+      </script>
+</body>
