@@ -1,118 +1,124 @@
-body{
+body {
     background-color: #F1EEEA;
+    margin: 0; /* Remove default body margin */
+    font-family: 'Times New Roman', Times, serif; /* Set a default font */
 }
 
-
-
-.navi{
+.navi {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position:sticky;
-    top:0;
+    position: sticky;
+    top: 0;
     background-color: #F1EEEA;
     height: 70px;
-
+    padding: 10px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding in total width */
 }
 
-.options{
+.options {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 14px;
-    
+    align-items: center; /* Center items vertically */
 }
 
-a{
+a {
     padding: 10px;
     text-decoration: none;
     color: #362F2C;
 }
 
-
-
-
-.img{
+.img {
     background-image: url(wod.jpg);
     background-size: cover;
-    height: 500px;
+    height: 300px; /* Adjust height for responsiveness */
 }
 
-
-.wood{
+.wood {
     text-align: center;
     color: white;
-    
+    padding: 20px; /* Add padding for better spacing */
 }
 
-
-.bttnclr{
+.bttnclr {
     background-color: #B69B74;
-    border-style: hidden;
+    border: none; /* Simplify border style */
     color: white;
     font-family: 'muli', 'sans-serif';
-    border-width: 10px;
-    padding: 10px 4rem;
-    }
-
-
-.foo{
-    background-color:#362F2C;
-    height: 100px;
-    color: white;
-   
-
+    padding: 10px 2rem; /* Adjust padding for responsiveness */
+    cursor: pointer; /* Add cursor pointer for better user experience */
 }
 
-.textfoo{
-    
+.foo {
+    background-color: #362F2C;
+    color: white;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.textfoo {
     text-align: center;
     padding-top: 2rem;
 }
 
-
-.abt{
+.abt {
     text-align: center;
-    text-decoration:solid
-
+    padding: 20px; /* Add padding for better spacing */
 }
 
-
-.text{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight:bold;
+.text {
+    font-weight: bold;
     text-align: center;
 }
 
-.txt{
-color: white;
-font-weight: bold;
-font-size: large;  
+.txt {
+    color: white;
+    font-weight: bold;
+    font-size: large;
 }
 
-.animate{
-         
-  
+.animate {
     width: 100%;
     font-size: 1rem;
     padding: 0.25rem;
-    vertical-align: middle;
-    box-shadow: 0 0 0 transparent;
+    box-sizing: border-box; /* Include padding in total width */
     border: 1px solid #999;
     outline: 0 none;
-    transition: box-shadow 0.5s;}
-    
-  .error{
-    
-      animation: shake 0.2s ease-in-out 0s 2;
-      box-shadow: 0 0 0.5em red;}
-    
-@keyframes shake {
-  0% { margin-left: 0rem; }
-  25% { margin-left: 0.5rem; }
-  75% { margin-left: -0.5rem; }
-  100% { margin-left: 0rem; }
+    transition: box-shadow 0.5s;
 }
 
+.error {
+    animation: shake 0.2s ease-in-out 0s 2;
+    box-shadow: 0 0 0.5em red;
+}
 
+@keyframes shake {
+    0% { margin-left: 0rem; }
+    25% { margin-left: 0.5rem; }
+    75% { margin-left: -0.5rem; }
+    100% { margin-left: 0rem; }
+}
 
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+    .navi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .options {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .img {
+        height: 200px;
+    }
+
+    .wood,
+    .bttnclr,
+    .foo,
+    .abt {
+        padding: 10px;
+    }
+}
